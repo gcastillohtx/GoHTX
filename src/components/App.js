@@ -1,17 +1,20 @@
-import React from 'react'
-import EventContainer from './EventContainer'
-import Header from './Header'
+import React from "react";
+import NavBar from "./NavBar";
+import Background from './Background'
 
 
 function App() {
   return (
-    <div className="app"> 
-    <Header />
-    <EventContainer />
+    <>
+     <NavBar />
+     <Background />
+     
+        
     
-    
-    </div>
-  )
+          
+       
+    </>
+  );
 }
 
-export default App
+export default App;
