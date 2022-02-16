@@ -22,7 +22,7 @@ fetch("http://localhost:3000/events")
   return (
     <>
      <NavBar />
-     <Background />
+     <Background  />
      <HomeContainer allEvents={allEvents} />
 
      

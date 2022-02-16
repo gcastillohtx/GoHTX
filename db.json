@@ -48,8 +48,8 @@
       "location" : "Satellite Houston",
       "hours" : "8pm-2am",
       "start" : "8:00 PM",
-      "ticketlink" : "",
-      "free" : true,
+      "ticketlink" : "https://www.eventbrite.com/e/the-virulent-tickets-271107007357",
+      "free" : false,
       "date" : "Friday, Feb 18"
   },
 

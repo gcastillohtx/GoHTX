@@ -8,11 +8,12 @@ function HomeEventCard({ event }) {
         <img src={event.image} className="card__image" />
         <div className="card__content">
           <div className="card__title">{event.name}</div>
-          <h3 className="title">{event.title}</h3>
+          <h2 className="title">{event.title}</h2>
           <p className="card__text">{event.location}</p>
-          <h2>{event.free ? "Free Event" : "Buy Tickets"}</h2>
+          <p style={{color: 'white'}} className="likes"> 🤘{event.likes} Likes</p>
+          <p className= "date"> {event.date} </p>
           <p classname="start"> Time: {event.hours} </p>
-          <p className="likes"> 🤘{event.likes} Likes</p>
+          <h2 style={{color: 'blue'}}>{event.free ? "Free Event" : "Buy Tickets"} </h2>
         </div>
       </div>
     </li>
