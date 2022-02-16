@@ -1,9 +1,21 @@
-import React from 'react'
+import React from "react";
+import "./HomeEventCard.css";
 
-function HomeEventCard() {
+function HomeEventCard({ event }) {
   return (
-    <div>HomeEventCard</div>
-  )
+    <li className="cards__item">
+      <div className="card">
+        <img src={event.image} className="card__image" />
+        <div className="card__content">
+          <div className="card__title">{event.name}</div>
+          <h3 className="title">{event.title}</h3>
+          <p className="card__text">{event.location}</p>
+          <p classname="start"> Time: {event.hours} </p>
+          <p className="likes"> 🤘{event.likes} Likes</p>
+        </div>
+      </div>
+    </li>
+  );
 }
 
-export default HomeEventCard
+export default HomeEventCard;
