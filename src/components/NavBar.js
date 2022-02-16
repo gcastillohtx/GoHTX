@@ -11,8 +11,7 @@ function NavBar() {
       <ul className="nav-menu">
         <li>Home</li>
         <li>All Events</li>
-        <li>New To HTX</li>
-        <li>Contact Us</li>
+        <li>Submit An Event</li>
       </ul>
     </div>
   );
