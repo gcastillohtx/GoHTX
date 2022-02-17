@@ -3,6 +3,7 @@ import HomeEventCard from './HomeEventCard'
 import './EventContainer.css'
 
 function EventContainer({allEvents}) {
+  
   return (
     <div id="container">
       

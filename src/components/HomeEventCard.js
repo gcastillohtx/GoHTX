@@ -12,8 +12,8 @@ function HomeEventCard({ event }) {
           <p className="card__text">{event.location}</p>
           <p style={{color: 'white'}} className="likes"> 🤘{event.likes} Likes</p>
           <p className= "date"> {event.date} </p>
-          <p classname="start"> Time: {event.hours} </p>
-          <h2 style={{color: 'blue'}}>{event.free ? "Free Event" : <a href={event.ticketlink}>Buy Tickets</a>} </h2>
+          <p className="start"> Time: {event.hours} </p>
+          <h2 style={{color: 'white'}}>{event.free ? "Free Event" : <a href={event.ticketlink}>Buy Tickets</a>} </h2>
         </div>
       </div>
     </li>

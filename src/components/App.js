@@ -13,7 +13,9 @@ function App() {
 
 const [allEvents, setAllEvents] = useState ([])
 
-
+function addEventToState(event){
+  setAllEvents([...allEvents, event])
+}
 
 useEffect(() => {
 fetch("http://localhost:3000/events")
@@ -26,13 +28,13 @@ fetch("http://localhost:3000/events")
 
   return (
     <>
-     <NavBar />
+     {/* <NavBar /> */}
      
     <div className="app-container">
       <Routes>
         <Route path="/" element={<HomeContainer allEvents={allEvents} />} />
         <Route path="/events" element={ <EventContainer allEvents={allEvents}  />} />
-        <Route path="/add_event" element={ <EventForm />  } />
+        <Route path="/add_event" element={ <EventForm addEventToState={addEventToState}/>  } />
       </Routes>
     </div>
        
