@@ -4,19 +4,25 @@ import Background from './Background'
 import NavBar from './NavBar'
 
 
-function Home({allEvents}) {
+function Home({allEvents, updateLikes}) {
 
-  const sortedEvents = allEvents.sort(event => event.likes)
-  const topFive = sortedEvents.slice(0, 4)
+
+  const topFive = allEvents.slice(0, 4)
 
   return (
     <>
+    <Background>
+      <div className="overlay"></div>
+      <div className="content">
+        <h1>Houston Awaits You</h1>
+        <h2>Where will you go tonight?</h2>
+      </div>
+    </Background>
     
-    <Background  />
    
     <h1 className="homeheader">-PEOPLES CHOICE-</h1>
     <ul className="cards">
-      {topFive.map(event => <HomeEventCard key={event.id} event={event} />)}
+      {topFive.map(event => <HomeEventCard key={event.id} event={event} updateLikes={updateLikes}/>)}
     </ul>
     </>
   )

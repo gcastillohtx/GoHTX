@@ -207,22 +207,7 @@
       "ticketlink": "",
       "free": true,
       "date": "Saturday, Feb 19"
-    },
-    {
-      "title": "fdgf",
-      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFBcUFBUYFxcZGhkaGxoaGSAcIh0aHBsaGiEaGRwcICwjHBwpHRoZJDUlKC0vMjIyGSI4PTgxPCwxMi8BCwsLDw4PHRERHTEpIygxMTMxMzMxMzExNzExMTExMTMxMTExMTExMjExMTExMTIxMTExMTExMTExMTExMTExMf/AABEIAKgBLAMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAFBgMEAAIHAQj/xABGEAABAwIDBQYDBwIFAgMJAAABAgMRACEEEjEFQVFhcQYTIoGR8DKhsRRCUmLB0eEHIxUzcoLxU7JjkuIWQ4OTosLD0tP/xAAaAQADAQEBAQAAAAAAAAAAAAABAgMABAUG/8QALREAAgICAgECBgIBBQEAAAAAAAECEQMhEjFBBFETIjJhcYGRobEUI0Lh8AX/2gAMAwEAAhEDEQA/AObMLOeMt+ChRBBcSheYFSLApE7+B3RI9RRjZ+FOLyrWgJSiZWBBUPwjz30aXi8O0nKQkbgmJJOmm815GTOk1FK37BYiNYAhaQlQObxJEgKy3uRyIIPSjrjzilNNSQQqT6RHz+VXk7UZDkZAkfmbyn5ittr93Z1mMyrKFp5EE6dKV5pOatU/D+4Bg2WgPNLy3ylSHUTbMmxjgYEg+R3Uu4zDKZcBE5TdJ4jh+lR7IxWIYUY8P2n+2vxBVpnMn8CgJB8jqKbNtYDMxBEFKUqTbcU5h0tIPlwrsc1k15opB0Le2NnjFsZkD+6gEp4mNUee7nSNg8UtpxDjZhSSCDT9sF4hWXzpN29hg3iHUAQM5UBwCvFA6THlTY3qjNU6Ov7H26MY0lwHdChwVvmpXmK492f20vCuBabpPxJ4j9669s/aTeIbDjapB9QeB4GuyE7ITjWzTLWotcWNWyiqjgiqiWSJPOsUuowu1QoWbmtRrLRXFRrVFbBUio3FpCSpRCUpElRMA",
-      "location": "dfbdfbd",
-      "hours": "dfbdfdf",
-      "date": "dbfbdfb",
-      "id": 17
-    },
-    {
-      "title": "music",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJHCLlJggV7Mz3YO16OJ7D_G7EfhO4QcL8jw&usqp=CAU",
-      "location": "idk",
-      "hours": "8",
-      "date": "9/11",
-      "id": 18
     }
+    
   ]
 }

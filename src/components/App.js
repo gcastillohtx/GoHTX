@@ -13,6 +13,19 @@ function App() {
 
 const [allEvents, setAllEvents] = useState ([])
 
+function updateLikes(eventId){
+
+  const updatedEvents = allEvents.map(event => {
+    if(event.id === eventId){
+      return {...event, likes: event.likes + 1}
+    }else{
+      return event
+    }
+  })
+
+  setAllEvents(updatedEvents)
+}
+
 function addEventToState(event){
   setAllEvents([...allEvents, event])
 }
@@ -24,16 +37,18 @@ fetch("http://localhost:3000/events")
 }
 ,[])
 
+const sortedEvents = allEvents.sort((a, b) =>  b.likes - a.likes)
 
+console.log(sortedEvents);
 
   return (
     <>
-     {/* <NavBar /> */}
+     <NavBar />
      
     <div className="app-container">
       <Routes>
-        <Route path="/" element={<HomeContainer allEvents={allEvents} />} />
-        <Route path="/events" element={ <EventContainer allEvents={allEvents}  />} />
+        <Route path="/" element={<HomeContainer allEvents={sortedEvents} updateLikes={updateLikes}/>} />
+        <Route path="/events" element={ <EventContainer allEvents={sortedEvents} updateLikes={updateLikes} />} />
         <Route path="/add_event" element={ <EventForm addEventToState={addEventToState}/>  } />
       </Routes>
     </div>
