@@ -1,7 +1,12 @@
 import React, {useEffect, useState} from "react";
+import {Routes, Route} from "react-router-dom";
+
+
 import NavBar from "./NavBar";
-import Background from './Background'
 import HomeContainer from './HomeContainer'
+import EventContainer from "./EventContainer";
+import EventForm from "./EventForm";
+import '../App.css'
 
 
 function App() {
@@ -22,13 +27,14 @@ fetch("http://localhost:3000/events")
   return (
     <>
      <NavBar />
-     <Background  />
-     <HomeContainer allEvents={allEvents} />
-
      
-        
-    
-          
+    <div className="app-container">
+      <Routes>
+        <Route path="/" element={<HomeContainer allEvents={allEvents} />} />
+        <Route path="/events" element={ <EventContainer allEvents={allEvents}  />} />
+        <Route path="/add_event" element={ <EventForm />  } />
+      </Routes>
+    </div>
        
     </>
   );
